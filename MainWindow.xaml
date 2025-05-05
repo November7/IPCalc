@@ -8,5 +8,22 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+
+
+
+        <Label x:Name="label1" Content="Adres IP v4" HorizontalAlignment="Left" Margin="48,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Maska podsieci" HorizontalAlignment="Left" Margin="48,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.269,-0.931"/>
+        <TextBox x:Name="m_txtIP" HorizontalAlignment="Left" Margin="145,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="m_txtIP_TextChanged"/>
+        <TextBox x:Name="m_txtMask" HorizontalAlignment="Left" Margin="145,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <RadioButton x:Name="m_rbClass" Content="Adresacja klasowa" HorizontalAlignment="Left" Margin="431,62,0,0" VerticalAlignment="Top"  GroupName="Rodzaj" IsChecked="True" Checked="m_rbClass_Checked"/>
+        <RadioButton x:Name="m_rbCIDR" Content="CIDR" HorizontalAlignment="Left" Margin="431,115,0,0" VerticalAlignment="Top"  GroupName="Rodzaj" Checked="m_rbCIDR_Checked"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="57,175,94,25"  >
+            <TextBox x:Name="m_txtLogs" TextWrapping="WrapWithOverflow" Margin="5,5,5,5"/>
+        </Border>
+        <Button x:Name="m_btnCalc" Content="Info" HorizontalAlignment="Left" Margin="633,143,0,0" VerticalAlignment="Top" Width="70" Click="m_btnCalc_Click"/>
+
+
+
+
     </Grid>
 </Window>
